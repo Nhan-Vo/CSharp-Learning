@@ -1,15 +1,17 @@
-﻿public class program
+﻿public class Example
 {
     public static void Main(string[] args)
     {
-        // Create a new instance of the class
-        var myClass = new MyClass();
-
-        // Call the method to get the greeting
-        string greeting = myClass.GetGreeting();
-
-        // Print the greeting to the console
-        Console.WriteLine(greeting);
+        Console.WriteLine("Enter the first number:");
+        int firstNumber = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the second number:");
+        int secondNumber = Convert.ToInt32(Console.ReadLine());
+        
+        int sum = firstNumber + secondNumber;
+        
+        Console.WriteLine($"The sum of {firstNumber} and {secondNumber} is: {sum}");
     }
 }
+
 
