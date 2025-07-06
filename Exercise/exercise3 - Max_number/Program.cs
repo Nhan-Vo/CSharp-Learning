@@ -1,6 +1,4 @@
-﻿//chúng ta cho phép nhập vào các giá trị a1, a2, a3...ai.. với i < n. Trong đó n là số lượng các số trong dãy. Sau đó, chúng ta thực hiện việc so sánh để tìm ra giá trị lớn nhất và hiển thị giá trị đó.
-
-public class Example3
+﻿public class Example3
 {
     public static void Main(string[] args)
     {
