@@ -3,7 +3,8 @@
     public static void Main(string[] args)
     {
         DateTime localDate = DateTime.Now;
-        System.Console.WriteLine("Datetime Now is : " + localDate);
+        Console.WriteLine("Datetime Now is : " + localDate);
+        Console.WriteLine($"{localDate.Hour}{localDate.Minute}{localDate.Second}");
     }
 }
 
