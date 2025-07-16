@@ -1,8 +1,12 @@
-﻿public class Program
+﻿public class Examplee
 {
-    public static void Main(string[] args)
+    public static void main(string[] args)
     {
-        const double pi = 3.14;
+        int[] array = { 1, 2, 3, 4, 5 };
+
+        foreach (var item in array)
+        {
+            Console.WriteLine(item);
+        }
     }
 }
-
