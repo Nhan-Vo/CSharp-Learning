@@ -2,7 +2,7 @@
 using System.Net;
 using System.Runtime.InteropServices;
 
-public class shaper
+public class Shaper
 {
     public static void Main(string[] args)
     {
@@ -25,8 +25,7 @@ public class shaper
                         Console.Write("* ");
                     }
                     Console.Write("\n");
-                }
-                ;
+                };
             }
             else if (option == 2)
             {
@@ -37,8 +36,7 @@ public class shaper
                         Console.Write("* ");
                     }
                     Console.Write("\n");
-                }
-                ;
+                };
             }
             else if (option == 3)
             {
