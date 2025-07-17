@@ -9,7 +9,7 @@ public class shaper
         bool status = true;
         do
         {
-            Console.Write("1. Print the rectangle\n2. Print the square triangle (The corner is square at 4 different angles: top-left, top-right, botton-left, botton-right)\n3. Print isosceles triangle\n4. Exit\nEnter an option:");
+            Console.Write("1. Print the rectangle\n2. Print the square triangle\n3. Print isosceles triangle\n4. Exit\nEnter an option: ");
             int option = Convert.ToInt32(Console.ReadLine());
 
             if (option == 4)
@@ -32,7 +32,7 @@ public class shaper
             {
                 for (int i = 1; i <= 5; i++)
                 {
-                    for (int j = 1; j < i; j++)
+                    for (int j = 1; j <= i; j++)
                     {
                         Console.Write("* ");
                     }
@@ -42,18 +42,20 @@ public class shaper
             }
             else if (option == 3)
             {
-                for (int i = 7; i >= 1; i--)
+                for (int i = 1; i <= 5; i++)
                 {
-                    for (int j = 1; j <= i; j++)
+                    for (int j = 1; j <= 5 - i; j++)
+                    {
+                        Console.Write("  ");
+                    }
+
+                    for (int k = 1; k <= 2 * i - 1; k++)
                     {
                         Console.Write("* ");
                     }
                     Console.Write("\n");
                 }
             }
-
         } while (status == true);
-        
-
     }
 }
